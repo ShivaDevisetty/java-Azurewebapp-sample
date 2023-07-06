@@ -20,11 +20,11 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'Jenkins-Resourcegroup'
-      def webAppName = 'Jenkins-webapp'
+      def webAppName = 'Jenkins-Webapp'
       // login Azure
  //     withCredentials([usernamePassword(credentialsId: 'siva', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
-          az login --service-principal -u f0e9badf-59be-4660-a157-6950d93f9769 -p 5DH8Q~LZS2tUqKzb~TlsPl1hBD_DI2xWVVv7JbzJ -t $AZURE_TENANT_ID
+          az login --service-principal -u 9541be5b-934c-4e8b-9938-8fae77ab84b6 -p ~cL8Q~YeifZWoI7qJkabMgogs0ZiVAJhEy56-byk -t $AZURE_TENANT_ID
           az account set -s $AZURE_SUBSCRIPTION_ID
         '''
     //  }
